@@ -135,12 +135,13 @@ function hashVizsgalat()
         password_hash('password3', PASSWORD_BCRYPT),
         '$2y$10$.vGA1O9wmRjrwAVXD98HNOgsNpDczlqm3Jq7KnEd1rVAGv3Fykk1a',
         '$2a$10$TwentytwocharactersaltThirtyonecharacterspasswordhash',
+        '$$2a$10$TwentytwocharactersaltThirtyonecharacterspasswordhash',
         '$2y$10$.vGA1O9wmRjrwAVVAGv3Fykk1a',
         'engedjbe'
     ];
 
     foreach ($hashek as $hash) {
-        if (preg_match('#[$][a-z0-9]{2}[$][a-z0-9]{2}[$][a-zA-Z0-9./]{53}#', $hash)) {
+        if (preg_match('#^(\$[a-z0-9]{2}){2}\$[a-zA-Z0-9./]{53}#', $hash)) {
             echo $hash . " - OK!" . PHP_EOL;
         } else {
             echo $hash . " -  HIBÁS!" . PHP_EOL;
