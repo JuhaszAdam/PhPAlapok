@@ -37,3 +37,9 @@ for ($i = 1; $i < 5; $i++) {
                 "error")));
     echo $a . PHP_EOL;
 }
+
+$bool = true && false;
+var_dump($bool); // false, that's expected
+
+$bool = true and false;
+var_dump($bool); // true, ouch!
