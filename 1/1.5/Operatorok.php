@@ -49,3 +49,7 @@ echo PHP_EOL;
 
 var_dump(false && false || true);   // ( ( false && false ) || true ) = TRUE
 var_dump(false AND false || true);  // ( false && ( false || true ) ) = FALSE
+
+$a = false;
+var_dump($a = true && true);   // (  $a = ( true  && true ) )
+var_dump($a = true AND true);  // ( ( $a = true ) AND true )
