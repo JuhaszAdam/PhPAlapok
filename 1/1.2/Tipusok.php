@@ -21,3 +21,19 @@ echo PHP_EOL;
 $a = 'b';
 $$a = 'I am b!';
 echo $b;
+
+
+echo PHP_EOL;
+echo PHP_EOL;
+
+$php = "a";
+$in_ = "php";
+$normal_ = "in_";
+$completely_ = "normal_";
+$is_ = "completely_";
+$This_ = "is_";
+$a = "This_";
+
+echo $a.$$a.$$$a.$$$$a.$$$$$a.$$$$$$a;
+
+echo PHP_EOL;
