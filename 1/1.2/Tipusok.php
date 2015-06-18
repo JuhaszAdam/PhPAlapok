@@ -16,3 +16,8 @@ $a = new StdClass; // osztályobjektum
 var_dump($a);
 $a = null; // null
 var_dump($a);
+
+echo PHP_EOL;
+$a = 'b';
+$$a = 'I am b!';
+echo $b;
