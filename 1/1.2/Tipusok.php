@@ -37,3 +37,15 @@ $a = "This_";
 echo $a.$$a.$$$a.$$$$a.$$$$$a.$$$$$$a;
 
 echo PHP_EOL;
+
+// Given these variables ...
+$nameTypes    = array("first", "last", "company");
+$name_first   = "John";
+$name_last    = "Doe";
+$name_company = "PHP.net";
+
+// Then this loop is ...
+foreach($nameTypes as $type)
+    print ${"name_$type"} . "\n";
+
+echo PHP_EOL;
