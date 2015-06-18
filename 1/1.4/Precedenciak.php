@@ -18,12 +18,22 @@ echo PHP_EOL;
 $x = 4;
 echo "x minus one equals " . $x - 1 . ", or so I hope";
 
-echo PHP_EOL;
+echo PHP_EOL . "C++ " . PHP_EOL;
 
 for ($i = 1; $i < 5; $i++) {
     $a = $i == 1 ? "one" :
         $i == 2 ? "two" :
             $i == 3 ? "three" :
                 "error";
+    echo $a . PHP_EOL;
+}
+
+echo PHP_EOL . "PHP " . PHP_EOL;
+
+for ($i = 1; $i < 5; $i++) {
+    $a = ($i == 1 ? "one" :
+        ($i == 2 ? "two" :
+            ($i == 3 ? "three" :
+                "error")));
     echo $a . PHP_EOL;
 }
