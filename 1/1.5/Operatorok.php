@@ -98,11 +98,12 @@ echo "\$a is now $a. Happy Debugging!" . PHP_EOL;
 // If that line triggers an error, the error handler will still be called, but it will be called with an error level of 0
 
 // (elnyomja az error message-eket)
-
-// nem találok rá értelmes tesztet annyira elvont
+@magic();
+function magic(){
+    new mákosguba;
+}
 
 // ` Operator
 // Kosz a monitoron
 // = exec();
-
 echo 'Working Directory: ' . `pwd`;
