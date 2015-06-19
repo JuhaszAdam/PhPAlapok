@@ -14,7 +14,15 @@ echo 'Mai nap ISO 8601 formában: ' . ((new DateTime())->format('c')) . PHP_EOL;
 echo 'Jelenleg ' . ($str = ((new DateTime())->format('I') == 1) ? "nyári időszámítás van." : "téli időszámítás van.") . PHP_EOL;
 echo 'Jelenleg ' . ($str = ((new DateTime())->format('L') == 1) ? "szökőév van." : "nincs szökőév.") . PHP_EOL;
 echo 'Ma van a jelenlegi év ' . (new Datetime())->format('W') . ". hete, " . (new Datetime())->format('z') . ". napja." . PHP_EOL;
-echo 'Valamikor élt egy ' . ((new DateTime())->format('F')) . " nevű római." . PHP_EOL;
+echo 'Valamikor élt egy ' . ((new DateTime())->format('F')) . " nevű római." . PHP_EOL . PHP_EOL;;
+
+echo 'A következő 7 nap DatePerioddal: ' . PHP_EOL;
+$napok = new DatePeriod(new DateTime(), DateInterval::createFromDateString('1 day'), 7);
+foreach ($napok as $nap) {
+    /** @var DateTime $nap */
+    echo $nap->format('F \o\f Y, \t\h\e jS') . PHP_EOL;
+}
+
 
 //countdown();
 
