@@ -14,12 +14,8 @@ $valtozoFuggveny("Szoveg");
 $valtozoFuggveny = "egy";
 $a = $valtozoFuggveny();
 kiir($a);
-echo "Warning! PhPInfo dump in:" . PHP_EOL;
-for ($i = 5; $i > 0; $i--) {
-    echo $i . PHP_EOL;
-    sleep(1);
-}
-phpinfo();
+€
+();
 
 function novel(&$a)
 {
@@ -47,4 +43,9 @@ function szamKiir($i = 0)
 function datumKiir(DateTime $date)
 {
     echo($date->format('Y-m-d') . PHP_EOL);
+}
+
+// Érdekesség: A PhP fordítója felismeri ezt a függvényt, de a legtöbb IDE hibának jelzi. (PhPStorm)
+function €() {
+    echo 'Meghívodott a "€()" nevű függvény.';
 }
