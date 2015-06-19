@@ -33,3 +33,13 @@ function dinamikusValtozonevek()
 
     var_dump(get_defined_vars());
 }
+
+/*
+ * Note that unlike Java and C++, variables declared inside blocks such as loops or if's,
+ will also be recognized and accessible outside of the block, so:
+*/
+for ($j = 0; $j < 3; $j++) {
+    if ($j == 1)
+        $variable_inside_the_loop = 4;
+}
+echo 'Variable inside the loop: ' . $variable_inside_the_loop;
