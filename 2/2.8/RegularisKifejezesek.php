@@ -5,6 +5,7 @@ emailVizsgalas();
 telefonszamVizsgalas();
 bankszamlaszamVizsgalat();
 hashVizsgalat();
+tombVizsgalas();
 
 function alapok()
 {
@@ -146,6 +147,27 @@ function hashVizsgalat()
         } else {
             echo $hash . " -  HIBÁS!" . PHP_EOL;
         }
+    }
+    echo PHP_EOL;
+}
+
+
+function tombVizsgalas()
+{
+    $emailLista = [
+        "juhasz.adam@virgo.hu",
+        "hibas:email.cim",
+        "Foo@Bar.com",
+        "hibas:email.cim",
+        "foo2@bar2.com",
+        "hibas:email.cim",
+    ];
+
+    $validEmailLista = preg_grep('#[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}#', $emailLista);
+
+    echo 'Valid E-mail-ek:'. PHP_EOL;
+    foreach ($validEmailLista as $email) {
+            echo $email . PHP_EOL;
     }
     echo PHP_EOL;
 }
