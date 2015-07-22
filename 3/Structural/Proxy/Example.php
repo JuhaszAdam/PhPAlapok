@@ -13,4 +13,3 @@ foreach ($cats as $cat) {
     /** @var Cat $cat */
     $cat->scratch();
 }
-
