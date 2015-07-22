@@ -16,4 +16,32 @@
   * Karakter kódolás és kezelés: http://php.net/manual/en/book.iconv.php, http://php.net/manual/en/book.mbstring.php
   * Reguláris kifejezések: http://php.net/manual/en/book.pcre.php
   * Dátum kezelés: http://php.net/manual/en/book.datetime.php
+* Programtervezési minták:
+  * Létrehozási minták
+    * Absztrakt Gyár
+    * Építő
+    * Gyártó Metódus
+    * Objektumkészlet
+    * Prototípus
+    * Egyke
+  * Szerkezeti minták
+    * Illesztő
+    * Híd
+    * Összetétel
+    * Díszítő
+    * Homlokzat
+    * Pehelysúlyú
+    * Helyettes
+  * Viselkedési minták
+    * Felelősséglánc
+    * Parancs
+    * Értelmező
+    * Bejáró
+    * Közvetítő
+    * Emlékeztető
+    * Megfigyelő
+    * Állapot
+    * Stratégia
+    * Sablonfüggvény
+    * Látogató
   
