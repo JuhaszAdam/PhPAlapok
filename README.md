@@ -30,7 +30,6 @@
     * Összetétel
     * Díszítő
     * Homlokzat
-    * Pehelysúlyú
     * Helyettes
   * Viselkedési minták
     * Felelősséglánc
